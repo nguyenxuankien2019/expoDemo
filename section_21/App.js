@@ -12,13 +12,13 @@ import {
   StyleSheet,
   StatusBar,
 } from 'react-native';
-import AlbumList from './src/Components/AlbumList';
+import PostList from './src/Components/PostList';
 const App = () => {
   return (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
-        <AlbumList/>
+        <PostList/>
       </SafeAreaView>
     </>
   );

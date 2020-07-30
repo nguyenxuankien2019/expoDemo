@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import axios from 'axios';
+import PostDetail from './PostDetail';
 
 export default class AlbumList extends Component {
     state = { posts: [] };
@@ -19,8 +20,7 @@ export default class AlbumList extends Component {
                 <View style={styles.viewStyles}>
                 <Text>Album List</Text>
             </View>
-            {this.state.posts.map( post => <Text style={{backgroundColor:'red',margin: 10, padding: 5}}>Title: {post.title}</Text> )}
-
+                <PostDetail posts={this.state.posts}/>
            </View>
         )
     }
