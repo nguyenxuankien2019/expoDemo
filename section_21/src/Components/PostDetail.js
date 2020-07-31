@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
-
+import Card  from './Card'
 
 const PostDetail = ({ posts }) => {
     return (
-        <View>
+        <Card>
             {posts.map(post => <Item key={post.id} title={post.title} categories={post.categories} />)}
-        </View>
+        </Card>
     )
 }
 const Item = ({ title, categories }) => {
